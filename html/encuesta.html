@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicias del Carmen</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../img/logo/logo.png"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/style_navbar_footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/style_encuesta.css">
+  </head>
+<body>
+    <header id="navbar" class="navbar">
+        <nav class="navbar-contenedor contenedor">
+          <a href="../index.html" class="nombre-logo">
+            <div class="navbar-logo"></div>
+            Delicias del Carmen
+          </a>
+          <div class="menu-hamburguesa" aria-label="Open navigation menu">
+              <div class="barra-hamburguesa"></div>
+              <div class="barra-hamburguesa"></div>
+              <div class="barra-hamburguesa"></div>
+          </div>
+          <section class="navbar-menu">
+            <ul class="navbar-enlaces">
+              <li class="navbar-opcion"><a class="navbar-enlace" href="sobrenosotros.html">
+                Sobre Nosotros</a></li>
+              <li class="navbar-opcion"><a class="navbar-enlace" href="productos.html">
+                Productos</a></li>
+              <li class="navbar-opcion"><a class="navbar-enlace" href="servicios.html">
+                Servicios</a></li>
+              <li class="navbar-opcion"><a class="navbar-enlace" href="galeria.html">
+                Galería</a></li>
+              <li class="navbar-opcion"><a class="navbar-enlace" href="contacto.html">
+                Contacto</a></li>
+            </ul>
+          </section>
+        </nav>
+        <section class="whatsapp-btn">
+          <a href="https://api.whatsapp.com/send?phone=504 99481931" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </section>
+    </header>
+    <script src="../js/javascript.js"></script>
+    <script src="../js/validar_encuesta.js"></script>
+    <main>
+      
+      <section class="encuesta"> 
+        <h1>Encuesta de satisfacción</h1>
+        <form action="encuesta.html" method="get" id="form_encuesta">          
+          <legend>Gracias por elegir Delicias del Carmen, por favor dé su opinión sobre nuestro servicio:</legend>
+          <br/>
+          <ol>
+          <li><label class="label">Ambiente:</label></li>
+          <input type="radio" value="E" name="1" id="txtExc" required/>
+          <label for="txtExc" class="radio">Excelente</label>
+          <input type="radio" value="B" name="1" id="txtBue" required/>
+          <label for="txtBue" class="radio">Bueno</label>
+          <input type="radio" value="R" name="1" id="txtReg" required/>
+          <label for="txtReg" class="radio">Regular</label>
+          <input type="radio" value="M" name="1" id="txtMal" required/>
+          <label for="txtMal" class="radio">Malo</label>
+          <br/>
+          <br/>
+          <li><label class="label">Atención al cliente:</label></li>
+          <input type="radio" value="E" name="2" id="txtExc" required/>
+          <label for="txtExc" class="radio">Excelente</label>
+          <input type="radio" value="B" name="2" id="txtBue" required/>
+          <label for="txtBue" class="radio">Bueno</label>
+          <input type="radio" value="R" name="2" id="txtReg" required/>
+          <label for="txtReg" class="radio">Regular</label>
+          <input type="radio" value="M" name="2" id="txtMal" required/>
+          <label for="txtMal" class="radio">Malo</label>
+          <br/>
+          <br/>
+          <li><label class="label">Calidad de los alimentos:</label></li>
+          <input type="radio" value="E" name="3" id="txtExc" required/>
+          <label for="txtExc" class="radio">Excelente</label>
+          <input type="radio" value="B" name="3" id="txtBue" required/>
+          <label for="txtBue" class="radio">Bueno</label>
+          <input type="radio" value="R" name="3" id="txtReg" required/>
+          <label for="txtReg" class="radio">Regular</label>
+          <input type="radio" value="M" name="3" id="txtMal" required/>
+          <label for="txtMal" class="radio">Malo</label>
+          <br/>
+          <br/>
+          <li><label class="label">Calidad de las bebidas:</label></li>
+          <input type="radio" value="E" name="4" id="txtExc" required/>
+          <label for="txtExc" class="radio">Excelente</label>
+          <input type="radio" value="B" name="4" id="txtBue" required/>
+          <label for="txtBue" class="radio">Bueno</label>
+          <input type="radio" value="R" name="4" id="txtReg" required/>
+          <label for="txtReg" class="radio">Regular</label>
+          <input type="radio" value="M" name="4" id="txtMal" required/>
+          <label for="txtMal" class="radio">Malo</label>
+          <br/>
+          <br/>
+          <li><label class="label">Rapidez del servicio:</label></li>
+          <input type="radio" value="E" name="5" id="txtExc" required/>
+          <label for="txtExc" class="radio">Excelente</label>
+          <input type="radio" value="B" name="5" id="txtBue" required/>
+          <label for="txtBue" class="radio">Bueno</label>
+          <input type="radio" value="R" name="5" id="txtReg" required/>
+          <label for="txtReg" class="radio">Regular</label>
+          <input type="radio" value="M" name="5" id="txtMal" required/>
+          <label for="txtMal" class="radio">Malo</label>            
+          </ol>              
+          <label for="txtLongText" class="label">Sugerencias y comentarios:</label><br/>
+          <textarea id="txtLongText" name="txtLongText" rows="5" placeholder="Escriba aquí"></textarea>
+          <br/>
+          <p id="error"></p>        
+          <button onclick="validar()" type="submit" name="btnEnviar">Enviar</button>
+        </form>
+      </section>   
+    
+    </main>
+
+    <footer class="footer-principal">
+      <section class="footer-left">
+          <h2>Delicias <span> Del Carmen</span></h2>
+          <section class="footer-links">                           
+              <a href="sobrenosotros.html">Sobre Nosotros</a><span> | </span>
+              <a href="productos.html">Productos</a><span> | </span>
+              <a href="servicios.html">Servicios</a><span> | </span>
+              <a href="galeria.html">Galería</a><span> | </span>
+              <a href="contacto.html">Contacto</a>
+          </section>
+          <p class="footer-name">© 2020 Delicias del Carmen</p>
+      </section>
+      <section class="footer-center">
+          <section>
+            <span class="material-icons">location_on</span>
+            <p>Los mangos, Villa de San Antonio, Comayagua.<br>Kilómetro 65 CA-5</p>
+          </section>
+          <section>
+            <span class="material-icons">phone</span>
+            <p>+504 9948-1931 | +504 2784-1373</p>
+          </section>
+          <section>
+            <span class="material-icons">email</span>
+            <p><a href="mailto:ventas@deliciasdelcarmenhn.com">ventas@deliciasdelcarmenhn.com</a></p>
+          </section>
+      </section>
+      <section class="footer-right">
+          <p class="footer-more-information">
+            <span>Acerca del Restaurante</span>
+            Cuna de los más ricos chicharrones que se producen en Honduras.
+            Una parada obligatoria en su viaje.
+          </p>
+          <section class="footer-icons">
+              <a href="https://www.facebook.com/Delicias-Del-Carmen-177114876181970/" target="_blank">
+                <span class="material-icons">facebook</span></a>            
+              <a href="https://www.instagram.com/deliciasdelcarmenhn/" target="_blank">
+                <span class="material-icons">photo_camera</span></a>
+          </section>
+      </section>
+  </footer>
+</body>
+</html>

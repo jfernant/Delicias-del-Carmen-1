@@ -1,0 +1,259 @@
+
+.parallax{
+    margin: 0px;
+    padding: 0px;
+    background-image: url("../img/Productos/lacteos/lacteos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax h2{
+    display: flex;
+    font: normal 1em 'Dancing Script', cursive;
+    font-size: 4em;
+    width: 100%;
+    height: 100%;
+    color:#fff;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.116),rgba(255, 255, 255, 0.342),rgba(255, 255, 255, 0.116));
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(14, 0, 0);
+}
+
+.des-producto {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    background-image: linear-gradient(#bd1c34, #a5192d);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 20% 5px;
+}
+
+.des-producto .descripcion{
+    width: 50%;
+    padding: 1em;
+    margin: 10px;
+    text-align: left;
+}
+
+.des-producto .image{
+    width: 50%;
+}
+.des-producto .image picture{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.des-producto .descripcion h3{
+    color: rgb(165,25,45);
+    font: bold;
+}
+
+.des-producto .descripcion p{
+    padding-top: 0.5em;
+    width: 50%;
+}
+
+.des-producto .image img{
+    width: 400px;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    float: right;
+}
+
+@media(max-width: 770px){
+    .parallax{
+        background-image: url("../img/Productos/lacteos/lacteos_tb.jpg");
+    }
+    .parallax h2{
+        font: normal 1em 'Dancing Script', cursive;
+        font-size: 4em;
+        color: #fff;
+        text-align: center;
+        text-shadow: 2px 2px 2px #000;
+    }
+
+    .des-producto {
+        display: inline-block;        
+    }
+    .des-producto .image picture{
+        justify-content: center;
+    }
+    .des-producto .descripcion{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .des-producto .descripcion h3{
+        margin: 0px;
+        padding: 1em;
+    }
+
+    .des-producto .descripcion p{
+        width: 100vw;
+        flex-wrap: wrap;
+        padding: 1em;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    .des-producto .image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .des-producto .image img{
+        width: 50%;
+        height: auto;
+        float: none;
+    }
+}
+
+@media(max-width: 480px){
+    .parallax{
+        background-image: url("../img/Productos/lacteos/lacteos_mv.jpg");
+        width: 100%;
+    }
+
+    .des-producto .image img{
+        width: 80%;
+        height: 50%;
+        float: none;
+    }
+    .des-producto .descripcion p{
+        padding: 1em 3em;
+    }
+}
+
+.lacteo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+.lacteo-texto,.lacteo-imagen{
+    width: 50%;
+    height: fit-content;
+    margin: 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;  
+}
+.lacteo-texto h2,.lacteo-texto p{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0; 
+}
+.lacteo-texto h2{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    color:  #000;
+    font-size: 3em;
+    font-weight: normal;
+    padding: 0.5em;
+    background-image: linear-gradient(#a5192d, #a5192d);
+    background-position: 50% 85%;
+    background-repeat: no-repeat;
+    background-size: 8% 3px;
+
+}
+.lacteo-texto .texto-inicial{
+    font-style: italic;
+    color: #fac50a;
+}
+.lacteo-texto p{
+    text-align: center;
+    font-size: 1em;
+    padding: 1em 2em;
+}
+.lacteo-imagen img{
+    width: 50%;
+    height: auto;
+    margin: 1em;
+}
+.lacteo.inverso section:nth-child(1){
+    order: 1;
+}
+.lacteo.inverso section:nth-child(2){
+    order: 2;
+}  
+@media (max-width:1020px){
+    .lacteo .lacteo-texto,.lacteo .lacteo-imagen{
+        overflow: hidden;
+        width: 100%;
+        height: fit-content;
+        margin: 0px;
+    }
+    .lacteo .lacteo-texto{
+        align-content: center;
+        height: fit-content;
+    }
+    .lacteo-texto h2{   
+        font-size: 2.5em;
+    }
+    .lacteo-texto p{
+        font-size: 1.3em;
+    }
+    .lacteo.inverso section:nth-child(1){
+        order: 2;
+    }
+    .lacteo.inverso section:nth-child(2){
+        order: 1;
+    }  
+    .lacteo-imagen img{
+        width: 70%;
+        height: auto;
+    }
+    .lacteo.inverso section:nth-child(1){
+        order: 2;
+    }
+    .lacteo.inverso section:nth-child(2){
+        order: 1;
+    }  
+}
+@media(max-width:480px){
+    .lacteo-imagen img{
+        width: 85%;
+        height: 50%;
+    }
+    .lacteo.inverso section:nth-child(1){
+        order: 2;
+    }
+    .lacteo.inverso section:nth-child(2){
+        order: 1;
+    }
+    .lacteo-texto h2{   
+        font-size: 2.2em;
+    }
+    .lacteo-texto p{
+        font-size: 1.1em;
+    }  
+}
+picture{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}

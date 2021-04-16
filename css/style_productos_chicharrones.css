@@ -1,0 +1,344 @@
+.parallax{
+    margin: 0px;
+    padding: 0px;
+    background-image: url("../img/Productos/chicharrones/chicharrones_parallax.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax h2{
+    display: flex;
+    font: normal 1em 'Dancing Script', cursive;
+    font-size: 4em;
+    width: 100%;
+    height: 100%;
+    color:#fff;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.116),rgba(255, 255, 255, 0.342),rgba(255, 255, 255, 0.116));
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(14, 0, 0);
+}
+
+.des-producto {
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.des-producto .descripcion{
+    width: 50%;
+    padding: 2.5em 1em;
+    margin: 10px;
+    text-align: left;
+}
+
+.des-producto .image{
+    width: 50%;
+    height: auto;
+}
+.des-producto .image img{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: flex-end;
+}
+.des-producto .descripcion h3{
+    color: #a5192d;
+    font: bold;
+}
+
+.des-producto .descripcion p{
+    padding-top: 1em;
+    width: 50%;
+}
+
+.des-producto .image img{
+    width: 400px;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    float: right;
+}
+
+@media(max-width: 900px){
+    .parallax h2{
+        font: normal 1em 'Dancing Script', cursive;
+        font-size: 4em;
+        color: #fff;
+        text-align: center;
+        text-shadow: 2px 2px 2px #000;
+    }
+    .des-producto {
+        display: inline-block;        
+    }
+    .des-producto .descripcion{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .des-producto .descripcion h3{
+        margin: 0px;
+        padding: 1em;
+    }
+    .des-producto .descripcion p{
+        width: 100vw;
+        flex-wrap: wrap;
+        padding: 1em;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    .des-producto .image{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .des-producto .image img{
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+    .des-producto .image img{
+        width: 50%;
+        height: auto;
+        float: none;
+    }
+}
+
+@media(max-width: 480px){
+    .parallax {
+        width: 100%;
+        background-image: url("../img/Productos/chicharrones/chicharrones_parallax_mv.jpg");
+    }
+    .des-producto .image img{
+        width: 80%;
+        height: 60%;
+        float: none;
+    }
+    .des-producto .descripcion p{
+        padding: 1em 3em;
+    }
+}
+
+.vista-productos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    margin: 2em 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center; 
+    color: #a5192d;
+    overflow: hidden;
+}
+.vista-productos .producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    height: fit-content;
+    margin: 1em;
+    padding: 2em 0;
+    border: #a5192d 3px solid;
+}
+.vista-productos .producto .imagen{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content:center;
+    align-items: center;
+}
+.vista-productos .producto .imagen picture{
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+}
+.vista-productos .producto img{
+    width: 300px;
+    height: auto;
+}
+.vista-productos .producto h2{
+    font-family:'Dancing Script', cursive;
+    width: 100%;
+    text-align: center;
+    margin: 0.3em 0;
+    font-weight: lighter;
+    font-size: 2em;
+    padding: 0 0 0.5em 0;
+}
+.vista-productos .producto p{
+    width: 100%;
+    text-align: center;
+    padding: 0.5em 0;
+}
+@media (max-width:1230px){
+    .vista-productos{
+        padding-bottom: 2em;
+        background-image: linear-gradient(#a5192d, #a5192d);
+        background-position: 50% 100%;
+        background-repeat: no-repeat;
+        background-size: 60% 5px;
+    }
+    .vista-productos .producto{
+        width: 100%;
+        height: fit-content;
+        border: none;
+    }
+    .vista-productos .producto .imagen{
+        width: 100%;
+        height: auto;
+    }
+    .vista-productos .producto img{
+        width: 50%;
+        height: auto;
+    }
+    .vista-productos .producto h2{
+        font-size: 3em;
+        background-image: linear-gradient(#a5192d, #a5192d);
+        background-position: 50% 100%;
+        background-repeat: no-repeat;
+        background-size: 10% 4px;
+    }
+}
+@media (max-width:1230px){
+    .vista-productos .producto img{
+        width: 70%;
+        height: auto;
+    }
+    .vista-productos .producto h2{
+        font-size: 1.5em;
+    }
+}
+
+.chicharron{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    width: 100%;
+    margin: 1em 0;
+    overflow: hidden;
+}
+.chicharron-texto,.chicharron-imagen{
+    width: 50%;
+    height: auto;
+    margin: 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;  
+}
+.chicharron-texto h2,.chicharron-texto p{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0; 
+}
+.chicharron-texto h2{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    color:  #000;
+    font-size: 3em;
+    font-weight: normal;
+    padding: 0.5em;
+    background-image: linear-gradient(#a5192d, #a5192d);
+    background-position: 50% 85%;
+    background-repeat: no-repeat;
+    background-size: 8% 3px;
+
+}
+.chicharron-texto .texto-inicial{
+    font-style: italic;
+    color: #fac50a;
+}
+.chicharron-texto p{
+    text-align: center;
+    font-size: 1em;
+    padding: 1em 2em;
+}
+.chicharron-imagen picture{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.chicharron-imagen img{
+    width: 70%;
+    height: auto;
+    margin: 1em;
+}
+.chicharron.inverso section:nth-child(1){
+    order: 1;
+}
+.chicharron.inverso section:nth-child(2){
+    order: 2;
+}  
+@media (max-width:1020px){
+    .chicharron .chicharron-texto,.chicharron .chicharron-imagen{
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        margin: 0px;
+    }
+    .chicharron .chicharron-texto{
+        align-content: center;
+        height: fit-content;
+    }
+    .chicharron-texto h2{   
+        font-size: 2.5em;
+    }
+    .chicharron-texto p{
+        font-size: 1.3em;
+    }
+    .chicharron.inverso section:nth-child(1){
+        order: 2;
+    }
+    .chicharron.inverso section:nth-child(2){
+        order: 1;
+    }  
+    .chicharron-imagen img{
+        width: 70%;
+        height: 45vw;
+    }
+    .chicharron.inverso section:nth-child(1){
+        order: 2;
+    }
+    .chicharron.inverso section:nth-child(2){
+        order: 1;
+    }  
+}
+@media(max-width:480px){
+    .chicharron-imagen img{
+        width: 85%;
+        height: 55vw;
+    }
+    .chicharron.inverso section:nth-child(1){
+        order: 2;
+    }
+    .chicharron.inverso section:nth-child(2){
+        order: 1;
+    }
+    .chicharron-texto h2{   
+        font-size: 2.2em;
+    }
+    .chicharron-texto p{
+        font-size: 1.1em;
+    }  
+}
